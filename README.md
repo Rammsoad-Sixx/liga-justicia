@@ -4,7 +4,6 @@ Este proyecto se encarga de manejar los planes de la liga de la justicia
 
 
 ## cambiops nuevos desde github
-<<<<<<< HEAD
 
 # h1
 ## h2
@@ -22,7 +21,5 @@ Este proyecto se encarga de manejar los planes de la liga de la justicia
 
 
 TEST PARA PR
-=======
 ## nuevos cambios desde mi repo
 ## nuevos cambios desde mi repo local
->>>>>>> b5a80fd (rebase unificado)
