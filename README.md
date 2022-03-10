@@ -13,6 +13,8 @@ Este proyecto se encarga de manejar los planes de la liga de la justicia
 ###### h6
 
 
-![GIThub Logo] (https://avatars.githubusercontent.com/u/583231?v=4)
+![GIThub Logo](https://avatars.githubusercontent.com/u/583231?v=4)
 
 *Esto* es un _texto_
+
+:metal:
