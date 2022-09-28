@@ -23,3 +23,5 @@ Este proyecto se encarga de manejar los planes de la liga de la justicia
 TEST PARA PR
 ## nuevos cambios desde mi repo
 ## nuevos cambios desde mi repo local
+
+cambio de RafaelWize
