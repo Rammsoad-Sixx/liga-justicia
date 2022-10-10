@@ -18,4 +18,4 @@ workflows:
   ci_build:
     jobs:
       - publish-package:
-          context: org-global
+          context: global
