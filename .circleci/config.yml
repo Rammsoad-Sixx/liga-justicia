@@ -2,19 +2,20 @@ version: "2.1"
 
 on:
   release:
-    jobs:
-      publish-package:
-        docker:
-          - image: circleci/php:7.4
-        steps:
-          - checkout
-          - run:
-              name: publish-package
-              command: .circleci/publish_package.sh
+
+jobs:
+  publish-package:
+    docker:
+      - image: circleci/php:7.4
+    steps:
+      - checkout
+      - run:
+          name: publish-package
+          command: .circleci/publish_package.sh
 
 workflows:
   version: 2
   ci_build:
     jobs:
       - publish-package:
-          context: Global
+          context: org-global
