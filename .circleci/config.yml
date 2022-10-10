@@ -9,7 +9,7 @@ on:
         steps:
           - checkout
           - run:
-              name: Publish package
+              name: publish-package
               command: .circleci/publish_package.sh
 
 workflows:
