@@ -14,7 +14,7 @@ on:
 
 workflows:
   version: 2
-  ci_build:
-    jobs:
-      publish-package:
-      context: Global
+      ci_build:
+      jobs:
+        publish-package:
+        context: Global
