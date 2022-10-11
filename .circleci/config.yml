@@ -28,9 +28,6 @@ jobs:
 workflows:
   version: 2.1
   ci_build:
-    when:
-      and:
-        - and: [<< pipeline.parameters.GHA_Action >>]
-        - equal: ["release", << pipeline.parameters.GHA_Event >>]
+    when: equal: ["release", << pipeline.parameters.GHA_Event >>]
     jobs:
       - publish-package  
