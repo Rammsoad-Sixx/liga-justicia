@@ -8,8 +8,8 @@ parameters:
     type: string
     default: ""
   GHA_Action:
-    type: string
-    default: ""
+    type: boolean
+    default: false
   GHA_Meta:
     type: string
     default: ""
