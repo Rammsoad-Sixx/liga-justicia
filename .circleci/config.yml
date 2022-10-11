@@ -1,8 +1,9 @@
-version: "2.1"
+version: 2.1
+parameters:
+  GHA_Action:
+    type: string
+    default: ""
 
-on:
-  release:
-    types: [published]
 
 jobs:
   publish-package:
@@ -15,6 +16,7 @@ jobs:
           command: .circleci/publish_package.sh
 
 workflows:
+  when: << pipeline.parameters.GHA_Action >>
   version: 2
   ci_build:
     jobs:
