@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 parameters:
   GHA_Action:
     type: string
@@ -16,8 +16,9 @@ jobs:
           command: .circleci/publish_package.sh
 
 workflows:
-  when: << pipeline.parameters.GHA_Action >>
+  version: 2
   ci_build:
-    jobs:
-      - publish-package:
-          context: Global
+  when: << pipeline.parameters.GHA_Action >>
+  jobs:
+    - publish-package:
+        context: Global
