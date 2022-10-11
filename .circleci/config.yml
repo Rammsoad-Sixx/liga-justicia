@@ -29,7 +29,8 @@ jobs:
           command: .circleci/publish_package.sh
 
 workflows:
+  version: 2.1
   ci_build:
     jobs:
       - publish-package:
-          context: Global
+          context: Global 
