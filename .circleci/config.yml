@@ -17,6 +17,7 @@ jobs:
 
 workflows:
   when: << pipeline.parameters.GHA_Action >>
+  version: 2
   ci_build:
     jobs:
       - publish-package:
