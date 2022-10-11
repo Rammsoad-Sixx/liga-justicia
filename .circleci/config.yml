@@ -23,7 +23,7 @@ jobs:
       - checkout
       - run:
           name: echo
-          command: echo "This is pipeline ID << parameters >>"
+          command: echo "This is pipeline event << pipeline.parameters.GHA_Event  >>"
       - run:
           name: publish-package
           command: .circleci/publish_package.sh
