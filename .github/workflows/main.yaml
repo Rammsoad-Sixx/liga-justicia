@@ -1,0 +1,12 @@
+on:
+  release:
+    types: [published]
+jobs:
+  trigger-circleci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: publish-package
+        id: 123456
+        uses: circleci/trigger_circleci_pipeline@v1.0
+        env:
+          CCI_TOKEN: 434c4860fc2e37503bcc178b53eb413e730c13b8
