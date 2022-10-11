@@ -7,6 +7,6 @@ jobs:
     steps:
       - name: publish-package
         id: rafa-paz-testing
-        uses: circleci/trigger_circleci_pipeline@v1.0.5
+        uses: CircleCI-Public/trigger-circleci-pipeline-action@v1.0.5
         env:
           CCI_TOKEN: 434c4860fc2e37503bcc178b53eb413e730c13b8
