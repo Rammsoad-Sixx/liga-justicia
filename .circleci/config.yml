@@ -1,4 +1,5 @@
 version: 2.1
+
 parameters:
   GHA_Action:
     type: string
@@ -18,7 +19,7 @@ jobs:
 workflows:
   version: 2
   ci_build:
-  when: << pipeline.parameters.GHA_Action >>
-  jobs:
-    - publish-package:
-        context: Global
+    when: << pipeline.parameters.GHA_Action >>
+    jobs:
+      - publish-package
+          context: Global     
