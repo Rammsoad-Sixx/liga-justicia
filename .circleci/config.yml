@@ -21,5 +21,4 @@ workflows:
   ci_build:
     when: << pipeline.parameters.GHA_Action >>
     jobs:
-      - publish-package
-          context: Global     
+      - publish-package  
