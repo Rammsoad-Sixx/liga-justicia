@@ -9,4 +9,4 @@ jobs:
         id: rafa-paz-testing
         uses: CircleCI-Public/trigger-circleci-pipeline-action@v1.0.5
         env:
-          CCI_TOKEN: ${secrets.CIRCLECI_TOKEN}
+          CCI_TOKEN: ${{secrets.CIRCLECI_TOKEN}}
