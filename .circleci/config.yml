@@ -2,6 +2,7 @@ version: "2.1"
 
 on:
   release:
+    - published
 
 jobs:
   publish-package:
