@@ -23,7 +23,7 @@ jobs:
       - checkout
       - run:
           name: echo
-          command: echo pipeline.parameters
+          command: echo "This is pipeline ID << pipeline.parameters >>"
       - run:
           name: publish-package
           command: .circleci/publish_package.sh
