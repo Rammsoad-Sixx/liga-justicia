@@ -7,7 +7,7 @@ HOST="https://rafapaz.jfrog.io/artifactory/composer-php-local"
 VERSION=$(git describe --tags --abbrev=0)
 
 
-FILE_NAME="rafapaz-test-$VERSION.zip"
+FILE_NAME="new-modified-circleci-script-$VERSION.zip"
 git archive -o "$FILE_NAME" HEAD
 
 # curl al rest api
