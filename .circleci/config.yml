@@ -8,8 +8,8 @@ parameters:
     type: string
     default: ""
   GHA_Action:
-    type: boolean
-    default: false
+    type: string
+    default: ""
   GHA_Meta:
     type: string
     default: ""
@@ -28,6 +28,9 @@ jobs:
 workflows:
   version: 2.1
   ci_build:
-    when: << pipeline.parameters.GHA_Action >>
+    when:
+      and:
+        - and: [<< pipeline.parameters.GHA_Action >>]
+        - equal: ["release", << pipeline.parameters.GHA_Event >>]
     jobs:
       - publish-package  
