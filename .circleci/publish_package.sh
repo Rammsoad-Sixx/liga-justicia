@@ -5,7 +5,7 @@ set -ex
 HOST="https://rafapaz.jfrog.io/artifactory/composer-php-local"
 # Determine the version from the tag; remove the leading v "v3.3.0" -> "3.3.0"
 LATEST_TAG=$(git describe --tags --abbrev=0)
-VERSION=8.0.0
+VERSION=8.1.0
 
 FILE_NAME="rafapaz-test-$VERSION.zip"
 git archive -o "$FILE_NAME" HEAD
