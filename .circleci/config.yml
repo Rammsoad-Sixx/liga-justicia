@@ -14,6 +14,14 @@ parameters:
     type: string
     default: ""
 
+workflows:
+  ci_build:
+    jobs:
+      - publish-package:
+          context: Global
+          filters:
+            tags:
+              only: /^[0-9].*/
 
 jobs:
   publish-package:
@@ -27,9 +35,3 @@ jobs:
       - run:
           name: publish-package
           command: .circleci/publish_package.sh
-
-workflows:
-  ci_build:
-    jobs:
-      - publish-package:
-          context: Global
