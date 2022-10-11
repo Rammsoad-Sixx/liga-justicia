@@ -30,9 +30,6 @@ jobs:
 
 workflows:
   ci_build:
-    when:
-      equal: [ "release", << pipeline.parameters.GHA_Event >> ]
-    
     jobs:
       - publish-package:
           context: Global
