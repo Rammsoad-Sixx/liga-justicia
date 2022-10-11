@@ -26,7 +26,7 @@ jobs:
           command: .circleci/publish_package.sh
 
 workflows:
-  version: 2
+  version: 2.1
   ci_build:
     when: << pipeline.parameters.GHA_Action >>
     jobs:
