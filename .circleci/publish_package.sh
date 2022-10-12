@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 set -ex
 
 ARTIFACTORY_URL="https://rafapaz.jfrog.io/artifactory"
@@ -17,6 +17,7 @@ STATUSCODE=$(curl --silent --output /dev/stderr --write-out "%{http_code}" -u "$
 echo "Status code returned by Artifactory package push: ${STATUSCODE}"
 echo "Script is running on shell: "
 ps -p $$
+bash --version
 echo $0
 
 if [[ ${STATUSCODE:0:1} =~ ^(4|5)$ ]] ; then
