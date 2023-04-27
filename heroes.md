@@ -10,3 +10,6 @@
 * nueva cosa para integrar a main con FF
 * nueva cosa para integrar a main con FF parte dos
 * nueva cosa para integrar a main con FF parte tres
+* nueva cosa para integrar a main con AS
+* nueva cosa para integrar a main con AS parte dos
+* nueva cosa para integrar a main con AS parte tres
