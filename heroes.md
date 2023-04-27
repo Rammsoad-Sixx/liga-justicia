@@ -14,3 +14,6 @@
 * nueva cosa para integrar a main con AS parte dos CONFLICTOS EN MAIN
 * nueva cosa para integrar a main con AS parte tres
 * nueva cosa para integrar a main CONFLICTOS DESDE MAIN
+* nueva cosa para integrar a main con AS CONFLICTO
+* nueva cosa para integrar a main con AS parte tres
+* nueva cosa para integrar a main con AS
